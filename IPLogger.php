@@ -44,6 +44,7 @@ function IpToWebhook($Hook, $Content)
       curl_setopt($Curl, CURLOPT_CUSTOMREQUEST, "POST");
       curl_setopt($Curl, CURLOPT_POSTFIELDS, $Content);
       curl_setopt($Curl, CURLOPT_RETURNTRANSFER, true);
+      curl_setopt( $Curl, CURLOPT_HTTPHEADER, array('Content-type: application/json'));
       return curl_exec($Curl);
 }
 
