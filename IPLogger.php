@@ -14,6 +14,7 @@ $Curl = curl_init("http://ip-api.com/json/$IP"); //Get the info of the IP using 
 curl_setopt($Curl, CURLOPT_RETURNTRANSFER, true);
 $Info = json_decode(curl_exec($Curl)); 
 curl_close($Curl);
+curl_setopt( $Curl, CURLOPT_HTTPHEADER, array('Content-type: application/json'));
 
 $ISP = $Info->isp;
 $Country = $Info->country;
